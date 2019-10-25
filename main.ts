@@ -103,7 +103,12 @@ namespace CrocoKit_Sensor {
             val_green /= 2;
         }
     }
-
+    
+    export function Init(Addr: number) {
+        //if (Addr == 0) i2cAddr = AutoAddr()
+        //else i2cAddr = Addr
+        COLOR_ADD = Addr;
+    }
 
     //% blockId=CrocoKit_Sensor_Light block="Light|pin %pin"
     //% weight=100
